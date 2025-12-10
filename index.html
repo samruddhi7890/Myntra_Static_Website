@@ -1,0 +1,30 @@
+<!-- Divide the Page into 3 rows. (Using Frames)
+Divide the first row into two columns. Insert the logo into the first frame and the website header into the right frame.
+
+Divide the 2nd row into 5 columns and insert the hyperlinks such as Home, Login, Registration, Catalogue, Cart, and Contact Us. (When we click on any hyperlink, corresponding web pages should be loaded into the bottom right frame)
+
+Divide the 3rd row into 2 columns. In the left column insert hyperlinks for the services of the website. (When we click on any hyperlink, corresponding web pages should be loaded into the right frame). In the right column write the description of the webpage.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <frameset rows="20%, 20%, 60%">
+    <frameset cols="20%, 80%">
+      <frame name="LogoFrame" src="logo.html" />
+      <frame name="WebsiteName" src="websiteName.html" />
+    </frameset>
+
+    <frameset cols="20%, 20%, 20%, 20%, 20%">
+      <frame name="Home" src="home.html" />
+      <frame name="Login" src="login.html" />
+      <frame name="Catalogue" src="catalogue.html" />
+      <frame name="Cart" src="cart.html" />
+      <frame name="ContactUs" src="contactUs.html" />
+    </frameset>
+
+    <frameset cols="25%, 75%">
+      <frame name="Services" src="services.html" />
+      <frame name="Description" src="description.html" />
+    </frameset>
+  </frameset>
+</html>
